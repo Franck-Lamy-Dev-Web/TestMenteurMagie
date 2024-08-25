@@ -1,0 +1,238 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #222;
+    margin: 0;
+}
+
+.cards-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.cards-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.cards-list li {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards-list li:hover {
+    transform: scale(1.07);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cards-list li:before {
+    content: "";
+    display: block;
+    margin-bottom: 15px;
+    height: 220px;
+    width: 220px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.cards-list li:nth-child(1):before {
+    background-image: url('/assets/teteDeMort.jpg');
+}
+
+.cards-list li:nth-child(2):before {
+    background-image: url('/assets/CleAncienne.jpg');
+}
+
+.cards-list li:nth-child(3):before {
+    background-image: url('/assets/Fleurs.jpg');
+}
+
+.cards-list li:nth-child(4):before {
+    background-image: url('/assets/montreCasse.jpg');
+}
+
+.instructions {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.instructions h2 {
+    font-size: 1.75rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.instructions p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.instructions p span {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #e63946;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Styles pour les questions */
+#testMenteur {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#testMenteur p {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#testMenteur label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#testMenteur input[type="radio"] {
+    margin-right: 10px;
+}
+
+#testMenteur button {
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#testMenteur button:hover {
+    background-color: #d62839;
+}
+
+.truth {
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.liar {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    .cards-list {
+        flex-wrap: wrap; /* Permet aux cartes de passer à la ligne si nécessaire */
+        justify-content: center;
+    }
+
+    .cards-list li {
+        width: 45%; /* Deux cartes par ligne sur des écrans moyens */
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .cards-list li {
+        width: 100%; /* Une carte par ligne sur des petits écrans */
+    }
+
+    .instructions h2 {
+        font-size: 1.5rem;
+    }
+
+    .instructions p {
+        font-size: 1.1rem;
+    }
+
+    .instructions p span {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    .cards-list li {
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+    .cards-list li:before {
+        height: 180px;
+        width: 180px;
+    }
+
+    .instructions h2 {
+        font-size: 1.3rem;
+    }
+
+    .instructions p {
+        font-size: 1rem;
+    }
+
+    .instructions p span {
+        font-size: 1.1rem;
+    }
+}
