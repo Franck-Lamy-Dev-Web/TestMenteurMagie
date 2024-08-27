@@ -10,8 +10,15 @@
 <body>
 <div class="container">
     <header>
-        <h1>Test du Menteur</h1>
+        <h1>Mensonge ou Vérité : <br>Quel Rôle Jouerez-vous ?</h1>
     </header>
+
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <p>
+            Je vais essayer de deviner à quelle image vous pensez.<br> Mais avant de commencer, il y a une règle importante : vous devez choisir de <strong>toujours mentir</strong> ou <strong>toujours dire la vérité</strong> pendant tout le test. Une fois que vous avez fait ce choix, vous ne pourrez plus le changer.<br><br>Pensez maintenant à l'un des objets suivants dans votre esprit :
+            <br><span>Pensez à l'une des images !</span>
+        </p>    </section>
 
     <section class="cards-section">
         <ul class="cards-list">
@@ -22,12 +29,10 @@
         </ul>
     </section>
 
-    <section class="instructions">
-        <h2>Instructions</h2>
-        <p>Vous allez jouer le rôle du menteur ou de celui qui dit toujours la vérité.<br>Vous devez garder votre rôle pendant toute l'expérience.<br><span>Pensez à l'une des images !</span> </p>
+    <section class="ready-section">
+        <h2>Prêt ? ...</h2>
+        <button onclick="testMenteur()">C'est par ici</button>
     </section>
-<h2>Prêt ? ...</h2>
-    <button onclick=testMenteur()>C'est par ici</button>
 
     <div id="testMenteur"></div>
 
