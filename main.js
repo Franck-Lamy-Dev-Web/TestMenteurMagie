@@ -13,7 +13,7 @@ const questions = [
         score: { oui: 2, non: 0 } // Score pour cette question
     },
     {
-        question: "Pensez-vous me pièger ?",
+        question: "Les chats seraient-ils derrière la disparition inexpliquée de certains chaussons gauche ?",
         options: ["oui", "non"],
         score: { oui: 0, non: 0 } // Score pour cette question (peut être modifié si nécessaire)
     },
